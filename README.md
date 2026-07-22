@@ -35,11 +35,14 @@ Aplikacja bedzie dostepna pod `http://localhost:8080`, panel admina pod `http://
 |---|---|
 | `GROQ_API_KEY` | Klucz API Groq do czatu |
 | `GROQ_MODEL` | Model Groq (np. `llama-3.1-8b-instant`) |
-| `GEMINI_API_KEY` | Klucz API Gemini do embeddingu |
+| `JINA_API_KEY` | Klucz API Jina do embeddingu |
 | `SUPABASE_URL` | URL projektu Supabase |
 | `SUPABASE_ANON_KEY` | Klucz anonimowy Supabase |
 | `SUPABASE_SERVICE_KEY` | Klucz serwisowy Supabase |
 | `PORT` | Port serwera (domyslnie 8080) |
+| `ADMIN_PASSWORD` | haslo admina do konfiguracji |
+
+
 
 ## Funkcje
 
