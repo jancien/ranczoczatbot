@@ -4,5 +4,6 @@ __pycache__/
 .sesskey
 venv/
 .venv/
+.venv3.11/
 *.egg-info/
 data/
