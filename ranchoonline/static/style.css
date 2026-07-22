@@ -1,0 +1,266 @@
+/* ===== RESET ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* ===== USER CHAT PAGE ===== */
+body.user-page {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    min-height: 100vh;
+}
+.user-page .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px;
+}
+.user-page .header {
+    text-align: center;
+    padding: 20px 0;
+}
+.user-page .header h1 {
+    font-size: 5rem;
+    color: #2d5016;
+    line-height: 1;
+}
+.user-page .subtitle-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 10px;
+}
+.user-page .subtitle-icon {
+    width: 86px;
+    height: 86px;
+    flex-shrink: 0;
+}
+.user-page .subtitle-icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.user-page .subtitle-text {
+    font-size: 2.1rem;
+    color: #3a3a3a;
+}
+.user-page .chat-box {
+    background: #fff;
+    backdrop-filter: blur(4px);
+    border-radius: 8px;
+    height: 500px;
+    overflow-y: auto;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border: 4px solid #3a3a3a;
+}
+.user-page .msg-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+    align-items: flex-start;
+}
+.user-page .msg-row.bot { flex-direction: row; }
+.user-page .msg-row.user { flex-direction: row-reverse; }
+.user-page .msg-icon {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+.user-page .msg-icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.user-page .msg {
+    padding: 10px 14px;
+    border-radius: 12px;
+    max-width: 75%;
+    word-wrap: break-word;
+}
+.user-page .msg-user {
+    background: #2d5016;
+    color: #fff;
+    border-bottom-right-radius: 4px;
+}
+.user-page .msg-bot {
+    background: #e8f0e0;
+    color: #333;
+    border-bottom-left-radius: 4px;
+}
+.user-page .msg-sources {
+    font-size: 0.75rem;
+    color: #888;
+    margin-top: 4px;
+}
+.user-page .input-area {
+    display: flex;
+    gap: 8px;
+}
+.user-page .input-area input {
+    flex: 1;
+    border: 4px solid #3a3a3a;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+}
+.user-page .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+.user-page .btn-primary {
+    background: #2d5016;
+    color: #fff;
+}
+.user-page .btn-primary:hover { background: #3a6b1c; }
+.user-page .examples {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+.user-page .examples button {
+    padding: 8px 14px;
+    border: 2px solid #3a3a3a;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.7);
+    cursor: pointer;
+    font-size: 0.85rem;
+    color: #555;
+    transition: all 0.2s;
+}
+.user-page .examples button:hover {
+    background: #2d5016;
+    color: #fff;
+    border-color: #3a3a3a;
+}
+.user-page .status {
+    font-size: 0.8rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+/* ===== ADMIN PAGES ===== */
+body.admin-page {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #f0f2f5;
+    color: #333;
+}
+.admin-page .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.admin-page .header {
+    padding: 16px 0;
+}
+.admin-page .header h1 {
+    font-size: 1.4rem;
+    color: #2d5016;
+}
+.admin-page .nav {
+    display: flex;
+    gap: 16px;
+    margin-top: 8px;
+}
+.admin-page .nav a {
+    color: #2d5016;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+.admin-page .nav a:hover { text-decoration: underline; }
+.admin-page .card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+.admin-page .card h2 {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 12px;
+}
+.admin-page .badge {
+    color: #888;
+    font-size: 0.85rem;
+    margin-bottom: 4px;
+}
+.admin-page .row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+.admin-page .row > div { flex: 1; }
+.admin-page .field {
+    margin-bottom: 12px;
+}
+.admin-page .field label,
+.admin-page label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #444;
+    margin-bottom: 4px;
+}
+.admin-page .input-full,
+.admin-page input:not([type="file"]) {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+.admin-page .textarea-full {
+    width: 100%;
+    height: 120px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+.admin-page .textarea-full.code {
+    font-family: monospace;
+}
+.admin-page .section-title {
+    font-size: 1rem;
+    color: #555;
+    margin: 16px 0 8px;
+}
+.admin-page .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+.admin-page .btn-primary {
+    background: #2d5016;
+    color: #fff;
+}
+.admin-page .btn-primary:hover { background: #3a6b1c; }
+.admin-page .btn-full { width: 100%; }
+.admin-page table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+}
+.admin-page th, .admin-page td {
+    padding: 8px 10px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+.admin-page th {
+    background: #2d5016;
+    color: #fff;
+    font-weight: 600;
+}
+.admin-page tr:hover { background: #f5f5f5; }
